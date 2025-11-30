@@ -1,2 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root {
+    --primary-color-light-blue : hsl(225, 100%, 94%);
+    --primary-color-dark-blue : hsl(245, 75%, 52%);
+    --neutral-color-light-blue : hsl(225, 100%, 98%) ;
+    --neutral-color-gray : hsl(224, 23%, 55%) ;
+    --neutral-color-dark-blue : hsl(223, 47%, 23%);
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: "Red Hat Display", sans-serif;
+    /* Mettre le background en haut, sur tout le conteneur de façon non répété*/
+    background: var(--primary-color-light-blue) url(images/pattern-background-desktop.svg) no-repeat;
+    background-position: top;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+/* Card*/
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    background-size: contain;
+    margin: 10rem 800rem;
+}
+
+/*Card Image*/
+.main-img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+}
+
+/*Card Info*/
+.text-info {
+    padding: 1rem 4rem 2rem 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--neutral-color-dark-blue);
+    font-weight: bold;
+}
+
+.main-text {
+    color: var(--neutral-color-gray);
+}
+/* Plan choice*/
+.plan-choice {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 1rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    background-color: var(--neutral-color-light-blue);
+}
+
+.change {
+    position: relative;
+    top : 25%;
+    left: 1rem;
+    color: var(--primary-color-dark-blue);
+    font-weight: bold;
+}
+
+.annual-plan {
+    font-weight: ;
+}
+
+.annual-plan-price {
+    position: relative;
+    right: 2rem;
+}
+
+
+.price {
+    color: var(--neutral-color-gray);
+}
+
+/*Payment and Cancelation*/
+button {
+    background-color: var(--primary-color-dark-blue);
+    color: var(--primary-color-light-blue);
+    font-weight: bold;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 1rem 0 var(--primary-color-light-blue);
+    margin-bottom: 2rem;
+}
+
+button:hover {
+    background-color: var(--neutral-color-dark-blue);
+    cursor: pointer;
+    color:var(--neutral-color-light-blue);
+}
+.cancel-order {
+    color: var(--neutral-color-gray);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--neutral-color-dark-blue)
+}
+
+/*Footer*/
+footer {
+    color: var(--neutral-color-gray);
+    text-align: center;
+
+    & a {
+        color: var(--neutral-color-gray);
+    }
+}
+
+
+
